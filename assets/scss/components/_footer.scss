@@ -1,0 +1,206 @@
+.fax-maker-container {
+    footer {
+        padding-bottom: 47px;
+        @include media-sm {
+            padding-bottom: 37px;
+        }
+        @include media-xs {
+            text-align: center;
+            padding-bottom: 24px;
+        }
+        .footer {
+            border-top: 1px solid #E3E3E8;
+            padding-top: 41px;
+            position: relative;
+            @include media-sm {
+                padding-top: 31px;
+            }
+            @include media-xs {
+                display:flex;
+                flex-flow: column;
+                padding-top: 31px;
+                border-top: none;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                    width: calc(100% - 40px);
+                    height: 1px;
+                    background: #E3E3E8;
+                }
+            }
+            .col-xs-12 {
+                @include media-xs {
+                    order: 1;
+                    &:first-child {
+                        order: 3;
+                    }
+                    &:last-child {
+                        order: 2;
+                    }
+                }
+            }
+        }
+        .copyright-container {
+            margin-top: 11px;
+            @include media-xs {
+                margin-top: 0;
+            }
+            span {
+                font-family: "proxima-nova";
+                font-weight: 500;
+                font-size: 13px;
+                color: #989BA1;
+                letter-spacing: 0;
+                line-height: 20px;
+            }
+        }
+        .social-links-container {
+            font-size: 0;
+            text-align: center;
+            @include media-xs {
+                margin-bottom: 47px;
+            }
+            li {
+                display: inline-block;
+                margin-right: 21px;
+                position: relative;
+                @include media-xs {
+                    margin-right: 20.5px;
+                }
+                @include media-sm {
+                    margin-right: 15px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    @include media-xs {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .social-icon {
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                border: 1px solid;
+                display: block;
+                width: 40px;
+                height: 40px;
+                @include media-xs {
+                    margin-right: 20.5px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    @include media-xs {
+                        margin-right: 0;
+                    }
+                }
+                &:before {
+                    display: none;
+                }
+                .fa {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    &.twitter-icon {
+                        background-color: #5EA9DD;
+                        .fa {
+                            color: $white;
+                        }
+                    }
+                    &.fcb-icon {
+                        background-color: #3b5998;
+                        .fa {
+                            color: $white;
+                        }
+                    }
+                    &.linkedin-icon {
+                        background-color: #0077B7;
+                        .fa {
+                            color: $white;
+                        }
+                    }
+                }
+                &.twitter-icon {
+                    border-color: #5EA9DD;
+                    .fa {
+                        font-size: 19px;
+                        line-height: 14px;
+                        color: #5EA9DD;
+                    }
+                }
+                &.fcb-icon {
+                    border-color: #3b5998;
+                    .fa {
+                        font-size: 16px;
+                        color: #3b5998;
+                    }
+                }
+                &.linkedin-icon {
+                    border-color: #0077B7;
+                    .fa {
+                        font-size: 17px;
+                        line-height: 14px;
+                        color: #0077B7;
+                    }
+                }
+            }
+        }
+        .legal-links-container {
+            font-size: 0;
+            text-align: right;
+            margin-top: 11px;
+            @include media-xs {
+                text-align: center;
+                margin: 0 0 43px 0;
+            }
+            li {
+                display: inline-block;
+                margin-right: 54px;
+                position: relative;
+                @include media-xs {
+                    margin-right: 20.5px;
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 9px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    @include media-xs {
+                        margin-right: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            a {
+                font-size: 13px;
+                line-height: 16px;
+                color: #464950;
+                letter-spacing: 0;
+                opacity: 0.7;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                &:hover {     
+                    opacity: 1;             
+                }
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

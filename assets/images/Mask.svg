@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="656px" viewBox="0 0 375 656" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="60.1497114%" y1="-5.01798304%" x2="60.1497114%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#140C35" offset="0%"></stop>
+            <stop stop-color="#0C2B67" offset="29.5618569%"></stop>
+            <stop stop-color="#0C2C65" stop-opacity="0.75" offset="59.7638386%"></stop>
+            <stop stop-color="#0D2D66" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Finals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1c.-FaxMaker-PPC-Landing-Page-(Mobile)" fill="url(#linearGradient-1)">
+            <polygon id="Mask" points="0 0 192.783518 0 375 0 375 656 0 656"></polygon>
+        </g>
+    </g>
+</svg>
